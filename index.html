@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 </head>
 
@@ -25,8 +25,8 @@
         <a href="#" class="menuItem">Resources</a>
       </div>
       <div class="menuButtons">
-        <a href="#">Login</a>
-        <a href="#" class="btn">Sign Up</a>
+        <a href="">Login</a>
+        <button type="button" class="btn">Sign Up</button>
       </div>
     </nav>
     <section class="firstSection">
@@ -34,7 +34,7 @@
         <h1>More than just shorter links</h1>
         <p>Build your brand’s recognition and get detailed insights
           on how your links are performing.</p>
-        <a href="#" class="btn">Get Started</a>
+        <button type="button" class="btn">Get Started</button>
       </div>
       <div class="rightSide">
         <img src="./images/illustration-working.svg" />
@@ -45,7 +45,7 @@
     <div class="linkStyle">
       <form class="linkUser">
         <input type="search" id="site-search" name="search" placeholder="Shorten a link here...">
-        <button type="submit" class="btn" id="search">Shorten It!</button>
+        <button type="button" class="btn" id="search">Shorten It!</button>
       </form>
     </div>
     <div class="result">
@@ -53,23 +53,23 @@
         <div class="resultItem">
           <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
           <div class="newLink">verflow.com/questi</div>
-          <button type="button" class="btn" id="copy">Copy</button>
+          <button type="button" class="btn copy" name="Copy">Copy</button>
         </div>
         <div class="resultItem">
           <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
           <div class="newLink">verflow.com/questi</div>
-          <button type="button" class="btn" id="copy">Copy</button>
+          <button type="button" class="btn copy" name="Copy">Copy</button>
         </div>
         <div class="resultItem">
           <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
           <div class="newLink">verflow.com/questi</div>
-          <button type="button" class="btn" id="copy">Copy</button>
+          <button type="button" class="btn copy" name="Copy">Copy</button>
         </div>
       </div>
     </div>
     <div class="statistics">
       <h3>Advanced Statistics</h3>
-      <p>Track how your links are performing across the web with our
+      <p>Track how your links are performing across the web with <br>our
         advanced statistics dashboard.</p>
       <div class="statList">
         <div class="statItem">
@@ -101,7 +101,7 @@
     </div>
     <div class="boost">
       <h3>Boost your links today</h3>
-      <a href="#" class="btn">Get Started</a>
+      <button type="button" class="btn">Get Started</button>
     </div>
   </main>
   <footer>
@@ -162,6 +162,7 @@
       </div>
     </div>
   </footer>
+  <script src="./src/style.js"></script>
 </body>
 
 </html>

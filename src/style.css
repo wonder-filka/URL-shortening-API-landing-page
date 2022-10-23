@@ -57,10 +57,19 @@ a {
   font-size: 18px;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
+.btnAterClick {
+  background-color: #9be3e2;
+  border: 1px solid #9be3e2;
+}
+
 nav {
   display: flex;
-  padding: 20px 0;
-  width: 80%;
+  padding: 50px 0;
+  width: 70%;
   margin: 0 auto;
   align-items: center;
   flex-wrap: wrap;
@@ -70,15 +79,18 @@ nav a {
   color: var(--very-dark-violet);
 }
 
+.logoHeader {
+  padding-right: 5%;
+}
 .menu {
   display: flex;
   justify-content: space-between;
   flex-wrap: initial;
-  padding-left: 5%;
 }
 
 .menuItem {
-  padding-left: 10%;
+  padding-right: 5%;
+  color: var(--grayish-violet);
 }
 
 .menuButtons {
@@ -92,10 +104,10 @@ nav a {
 
 .firstSection {
   display: flex;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
 }
 
 .leftSide {
@@ -104,24 +116,27 @@ nav a {
 }
 
 .leftSide p {
-  padding: 0 0 20px 0;
+  padding: 0 0 40px 0;
+  margin-top: 0;
+  font-size: 20px;
 }
 
 .rightSide {
   position: absolute;
   right: 0;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .rightSide img {
   z-index: 1;
   overflow: hidden;
-  margin-right: -10vh;
+  margin-right: -12vh;
   height: 70vh;
 }
 
 .linkUser {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   background-color: #3a3053;
   background-image: url("../images/bg-shorten-desktop.svg");
@@ -129,7 +144,7 @@ nav a {
   border-radius: 15px;
   z-index: 1000;
   display: flex;
-  margin-top: -5%;
+  margin-top: -4%;
   flex-wrap: wrap;
 }
 
@@ -156,11 +171,6 @@ nav a {
   margin: 50px 50px 50px 0;
 }
 
-#copy {
-  border-radius: 14px;
-  white-space: nowrap;
-}
-
 .statistics {
   z-index: 1000;
   text-align: center;
@@ -172,7 +182,7 @@ nav a {
 .statList {
   text-align: left;
   display: flex;
-  width: 80%;
+  width: 70%;
   margin: 100px auto;
   padding: 20px 0 0 0;
 }
@@ -209,12 +219,12 @@ nav a {
 
 .line {
   background-color: var(--cyan-color);
-  width: 60%;
+  width: 70%;
   padding: 5px 0;
   border-radius: 5px;
   position: absolute;
-  margin-top: -35vh;
-  margin-left: 20%;
+  margin-top: -32vh;
+  margin-left: 15%;
   z-index: 1;
 }
 
@@ -239,7 +249,7 @@ footer {
 .footWrap {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -264,7 +274,7 @@ footer {
 
 .resultWrap {
   display: block;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -285,4 +295,14 @@ footer {
 .newLink {
   padding-right: 20px;
   color: var(--cyan-color);
+}
+
+.copy {
+  white-space: nowrap;
+  padding: 12px 30px;
+  border-radius: 14px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 12vh;
 }
