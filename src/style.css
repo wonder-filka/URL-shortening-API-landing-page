@@ -8,6 +8,7 @@
   --red-color: #f46262;
 }
 
+html,
 body {
   background-color: white;
   max-width: 100%;
@@ -18,6 +19,7 @@ body {
 
 main {
   background-color: var(--gray-color);
+  margin: 10vh auto 0 auto;
 }
 
 h1 {
@@ -48,7 +50,6 @@ a {
 }
 
 nav,
-.firstSection,
 .linkStyle,
 .result,
 .statList,
@@ -93,6 +94,15 @@ nav {
 }
 
 .menuItem a:hover {
+  color: var(--dark-violet);
+}
+
+.menuButtons a {
+  padding: 0 2vh;
+  color: var(--grayish-violet);
+}
+
+.menuButtons a:hover {
   color: var(--dark-violet);
 }
 
@@ -142,11 +152,45 @@ nav {
   padding: 2vh 0;
 }
 
+.firstSection {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  padding-bottom: 10vh;
+}
+
+.leftSide {
+  margin-left: 15%;
+  z-index: 10;
+}
+
+.leftSide,
+.rightSide {
+  height: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+.rightSide img {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 2vh;
+}
+
+.inputStyle {
+  display: flex;
+}
+
 .linkStyle {
+  margin: 0 auto;
   background-color: #3a3053;
   background-image: url("../images/bg-shorten-desktop.svg");
   background-size: cover;
   border-radius: 15px;
+  margin-top: -5%;
 }
 
 .inputFlex {
@@ -217,6 +261,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   margin: 3vh auto;
+  justify-content: space-between;
 }
 
 .statItem {
@@ -225,10 +270,12 @@ label {
   border-radius: 14px;
   height: 100%;
   flex: 1;
+  z-index: 1000;
+  margin: 1vh;
 }
 
 .statItem:nth-child(2) {
-  margin: 5vh 2vh 0 2vh;
+  margin-top: 5vh;
 }
 
 .statItem:nth-child(3) {
@@ -247,6 +294,17 @@ label {
 
 .statImg img {
   padding: 2vh;
+}
+
+.line {
+  background-color: var(--cyan-color);
+  margin-left: 20%;
+  margin-top: 20vh;
+  padding: 3px 0;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1;
+  width: 50%;
 }
 
 .boost {
