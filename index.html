@@ -2,167 +2,187 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./src/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="logoHeader">
-        <img src="./images/logo.svg" alt="logo" />
-      </div>
-      <div class="menu">
-        <a href="#" class="menuItem">Features</a>
-        <a href="#" class="menuItem">Pricing</a>
-        <a href="#" class="menuItem">Resources</a>
-      </div>
-      <div class="menuButtons">
-        <a href="">Login</a>
-        <button type="button" class="btn">Sign Up</button>
-      </div>
-    </nav>
-    <section class="firstSection">
-      <div class="leftSide">
-        <h1>More than just shorter links</h1>
-        <p>Build your brand’s recognition and get detailed insights
-          on how your links are performing.</p>
-        <button type="button" class="btn">Get Started</button>
-      </div>
-      <div class="rightSide">
-        <img src="./images/illustration-working.svg" />
-      </div>
-    </section>
-  </header>
-  <main>
-    <div class="linkStyle">
-      <form class="linkUser">
-        <input type="search" id="site-search" name="search" placeholder="Shorten a link here...">
-        <button type="button" class="btn" id="search">Shorten It!</button>
-      </form>
-    </div>
-    <div class="result">
-      <div class="resultWrap">
-        <div class="resultItem">
-          <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
-          <div class="newLink">verflow.com/questi</div>
-          <button type="button" class="btn copy" name="Copy">Copy</button>
+    <header>
+        <nav>
+            <div class="logoHeader">
+                <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <div class="menu">
+                <div class="menuItem"><a href="#">Features</a></div>
+                <div class="menuItem"><a href="#">Pricing</a></div>
+                <div class="menuItem"><a href="#">Resources</a></div>
+            </div>
+            <div class="menuButtons">
+                <a href="">Login</a>
+                <button type="button" class="btn">Sign Up</button>
+            </div>
+            <div class="menuMobile">
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+                <div class="menuLine"></div>
+
+            </div>
+        </nav>
+        <div class="listMobile">
+            <div class="mobItem"><a href="#">Features</a></div>
+            <div class="mobItem"><a href="#">Pricing</a></div>
+            <div class="mobItem"><a href="#">Resources</a></div>
+            <div class="mobLine"></div>
+            <div><a href="">Login</a></div>
+            <button type="button" class="btnMob" id="singUp">Sign Up</button>
+
         </div>
-        <div class="resultItem">
-          <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
-          <div class="newLink">verflow.com/questi</div>
-          <button type="button" class="btn copy" name="Copy">Copy</button>
+        <section class="firstSection">
+            <div class="leftSide">
+                <h1>More than just shorter links</h1>
+                <p>Build your brand’s recognition and get detailed insights
+                    on how your links are performing.</p>
+                <button type="button" class="btn">Get Started</button>
+            </div>
+            <div class="rightSide">
+                <img src="./images/illustration-working.svg" />
+            </div>
+        </section>
+    </header>
+    <main>
+        <div>
+            <div class="inputStyle">
+                <form class="linkStyle">
+                    <div class="inputFlex">
+                        <input type="search" id="inputSearch" name="search" placeholder="Shorten a link here...">
+                        <button type="button" class="btn" id="search">Shorten It!</button>
+                    </div>
+                    <label for="search">Please add a link</label>
+                </form>
+            </div>
         </div>
-        <div class="resultItem">
-          <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
-          <div class="newLink">verflow.com/questi</div>
-          <button type="button" class="btn copy" name="Copy">Copy</button>
+        <div class="result">
+            <div class="resultWrap">
+                <div class="resultItem">
+                    <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
+                    <div class="newLink">verflow.com/questi</div>
+                    <button type="button" class="btn copy" name="Copy">Copy</button>
+                </div>
+                <div class="resultItem">
+                    <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
+                    <div class="newLink">verflow.com/questi</div>
+                    <button type="button" class="btn copy" name="Copy">Copy</button>
+                </div>
+                <div class="resultItem">
+                    <div class="link">http://shpargalkablog.ru/2016/05/flex.html</div>
+                    <div class="newLink">verflow.com/questi</div>
+                    <button type="button" class="btn copy" name="Copy">Copy</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="statistics">
-      <h3>Advanced Statistics</h3>
-      <p>Track how your links are performing across the web with <br>our
-        advanced statistics dashboard.</p>
-      <div class="statList">
-        <div class="statItem">
-          <div class="statImg">
-            <img src="./images/icon-brand-recognition.svg" alt="Brand Recognition" />
-          </div>
-          <h5>Brand Recognition</h5>
-          <p>Boost your brand recognition with each click. Generic links don’t
-            mean a thing. Branded links help instil confidence in your content.</p>
+        <div class="statistics">
+            <h3>Advanced Statistics</h3>
+            <p class="center">Track how your links are performing across the web with <br>our
+                advanced statistics dashboard.</p>
+            <div class="statList">
+                <div class="statItem">
+                    <div class="statImg">
+                        <img src="./images/icon-brand-recognition.svg" alt="Brand Recognition" />
+                    </div>
+                    <h5>Brand Recognition</h5>
+                    <p>Boost your brand recognition with each click. Generic links don’t
+                        mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="statItem">
+                    <div class="statImg">
+                        <img src="./images/icon-detailed-records.svg" alt="Detailed Records" />
+                    </div>
+                    <h5>Detailed Records</h5>
+                    <p>Gain insights into who is clicking your links. Knowing when and where
+                        people engage with your content helps inform better decisions.</p>
+                </div>
+                <div class="statItem">
+                    <div class="statImg">
+                        <img src="./images/icon-fully-customizable.svg" alt="Fully Customizable" />
+                    </div>
+                    <h5>Fully Customizable</h5>
+                    <p>Improve brand awareness and content discoverability through customizable
+                        links, supercharging audience engagement.</p>
+                </div>
+                <div class="line"></div>
+            </div>
         </div>
-        <div class="statItem">
-          <div class="statImg">
-            <img src="./images/icon-detailed-records.svg" alt="Detailed Records" />
-          </div>
-          <h5>Detailed Records</h5>
-          <p>Gain insights into who is clicking your links. Knowing when and where
-            people engage with your content helps inform better decisions.</p>
+        <div class="boost">
+            <h3>Boost your links today</h3>
+            <button type="button" class="btn btnBoost">Get Started</button>
         </div>
-        <div class="statItem">
-          <div class="statImg">
-            <img src="./images/icon-fully-customizable.svg" alt="Fully Customizable" />
-          </div>
-          <h5>Fully Customizable</h5>
-          <p>Improve brand awareness and content discoverability through customizable
-            links, supercharging audience engagement.</p>
+    </main>
+    <footer>
+        <div class="footWrap">
+            <div class="logoFoot">
+                <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <div class="listFoot">
+                <a href="#">
+                    <div class="footBold">Features</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Link Shortening</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Branded Links</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Analytics</div>
+                </a>
+            </div>
+            <div class="listFoot">
+                <a href="#">
+                    <div class="footBold">Resources</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Blog</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Developers</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Support</div>
+                </a>
+            </div>
+            <div class="listFoot">
+                <a href="#">
+                    <div class="footBold">Company</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">About</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Our Team</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Careers</div>
+                </a>
+                <a href="#">
+                    <div class="footListItem">Contact</div>
+                </a>
+            </div>
+            <div class="contacts">
+                <a href="#"><img src="./images/icon-facebook.svg" /></a>
+                <a href="#"><img src="./images/icon-twitter.svg" /></a>
+                <a href="#"><img src="./images/icon-pinterest.svg" /></a>
+                <a href="#"><img src="./images/icon-instagram.svg" /></a>
+            </div>
         </div>
-      </div>
-      <div class="line"></div>
-    </div>
-    <div class="boost">
-      <h3>Boost your links today</h3>
-      <button type="button" class="btn">Get Started</button>
-    </div>
-  </main>
-  <footer>
-    <div class="footWrap">
-      <div class="logoFoot">
-        <img src="./images/logo.svg" alt="logo" />
-      </div>
-      <div class="listFoot">
-        <a href="#">
-          <div class="footBold">Features</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Link Shortening</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Branded Links</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Analytics</div>
-        </a>
-      </div>
-      <div class="listFoot">
-        <a href="#">
-          <div class="footBold">Resources</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Blog</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Developers</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Support</div>
-        </a>
-      </div>
-      <div class="listFoot">
-        <a href="#">
-          <div class="footBold">Company</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">About</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Our Team</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Careers</div>
-        </a>
-        <a href="#">
-          <div class="footListItem">Contact</div>
-        </a>
-      </div>
-      <div class="contacts">
-        <a href="#"><img src="./images/icon-facebook.svg" /></a>
-        <a href="#"><img src="./images/icon-twitter.svg" /></a>
-        <a href="#"><img src="./images/icon-pinterest.svg" /></a>
-        <a href="#"><img src="./images/icon-instagram.svg" /></a>
-      </div>
-    </div>
-  </footer>
-  <script src="./src/style.js"></script>
+    </footer>
+    <script src="./src/style.js"></script>
 </body>
 
 </html>
