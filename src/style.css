@@ -363,10 +363,14 @@ label {
   margin: 5vh 0;
 }
 
+.statistics p {
+  margin: 3vh 0;
+}
+
 .statList {
   display: flex;
   flex-wrap: wrap;
-  margin: 3vh auto;
+  margin: 5vh auto;
   justify-content: space-between;
 }
 
@@ -395,7 +399,7 @@ label {
   height: 10vh;
   width: 10vh;
   background-color: var(--dark-violet);
-  margin-top: -6vh;
+  margin-top: -8vh;
   display: flex;
   justify-content: center;
   align-items: center;
