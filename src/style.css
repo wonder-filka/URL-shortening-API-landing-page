@@ -8,6 +8,100 @@
   --red-color: #f46262;
 }
 
+@media (max-width: 892px) {
+  .menu,
+  .menuButtons {
+    display: none !important;
+  }
+
+  .menuMobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 639px) {
+  #inputSearch {
+    margin: 0 0 4vh 0 !important;
+  }
+  #search {
+    margin: 0;
+    width: 100%;
+  }
+  label {
+    margin: -16vh 0 0 2vh !important;
+  }
+
+  .footWrap {
+    display: block !important;
+    text-align: center;
+  }
+  .logoFoot,
+  .contacts {
+    margin: 4vh 0;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 16px !important;
+  }
+
+  .btn {
+    font-size: 14px !important;
+  }
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+
+  .leftSide {
+    margin: 2vh !important;
+    text-align: center;
+  }
+
+  .resultItem {
+    display: block !important;
+    align-items: flex-start !important;
+    padding: 0px !important;
+  }
+
+  .link {
+    border-bottom: 1px solid var(--gray-color);
+    width: auto;
+    padding: 2vh !important;
+  }
+  .newLink {
+    padding: 2vh !important;
+  }
+  .copy {
+    margin: 1vh !important;
+    width: 90%;
+  }
+
+  .statItem {
+    margin: 3vh 0 !important;
+    min-width: 70%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .statistics p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2vh 0;
+  }
+
+  .line {
+    background-color: var(--cyan-color);
+    margin-left: 49% !important;
+    padding: 0 0px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    height: 130%;
+    width: 1vh !important;
+  }
+}
+
 html,
 body {
   background-color: white;
@@ -25,7 +119,7 @@ main {
 h1 {
   font-size: 64px;
   margin: 0;
-  line-height: 10vh;
+  line-height: 1.2;
 }
 
 h3 {
@@ -89,7 +183,7 @@ nav {
 }
 
 .menuItem a {
-  padding: 0 2vh;
+  padding-left: 3vh;
   color: var(--grayish-violet);
 }
 
@@ -107,18 +201,18 @@ nav {
 }
 
 .menuMobile {
-  width: 3vh;
-  height: 3vh;
-  display: flex;
+  width: 4vh;
+  height: 4vh;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: auto;
 }
 
 .menuLine {
-  width: 3vh;
-  height: 4px;
+  width: 5vh;
+  display: inline;
+  height: 3px;
   background-color: var(--grayish-violet);
-  display: none;
 }
 
 .listMobile {
@@ -133,6 +227,7 @@ nav {
 
 .listMobile div {
   margin: 2vh 0;
+  font-weight: 700;
 }
 
 .mobLine {
@@ -147,9 +242,10 @@ nav {
   border-radius: 25px;
   border: 1px solid var(--cyan-color);
   color: white;
-  font-weight: bold;
   width: 90%;
   padding: 2vh 0;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
 .firstSection {
@@ -164,6 +260,7 @@ nav {
 .leftSide {
   margin-left: 15%;
   z-index: 10;
+  max-width: 100%;
 }
 
 .leftSide,
@@ -171,6 +268,10 @@ nav {
   height: 100%;
   flex: 1;
   align-items: center;
+}
+
+.leftSide > p {
+  padding: 0 0 2vh 0;
 }
 
 .rightSide img {
@@ -200,17 +301,16 @@ nav {
 }
 
 #inputSearch {
-  flex: 5;
   border-radius: 14px;
   padding: 1rem 1rem;
   max-width: 100%;
+  flex: 1;
+  margin-right: 1vh;
 }
 
 #search {
   border-radius: 14px;
-  flex: 1;
-  width: 100%;
-  margin-left: 1vh;
+  margin-left: auto;
 }
 
 label {
@@ -218,7 +318,8 @@ label {
   color: var(--red-color);
   position: absolute;
   padding: 0 2rem;
-  margin-top: -5vh;
+  margin: -5vh 0 0 2vh;
+  font-size: 14px;
 }
 
 .resultWrap {
@@ -227,12 +328,13 @@ label {
 
 .resultItem {
   background-color: white;
-  margin: 2vh auto;
-  padding: 2vh;
+  margin: 3vh auto;
+  padding: 0vh;
   border-radius: 14px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 2vh;
 }
 
 .link {
@@ -250,11 +352,16 @@ label {
 .copy {
   border-radius: 14px;
   flex: 1;
+  padding: 0.8rem 1rem;
 }
 
 .center {
   text-align: center;
   align-items: center;
+}
+
+.statistics {
+  margin: 5vh 0;
 }
 
 .statList {
@@ -272,6 +379,8 @@ label {
   flex: 1;
   z-index: 1000;
   margin: 1vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .statItem:nth-child(2) {
@@ -284,16 +393,16 @@ label {
 
 .statImg {
   border-radius: 50% 50%;
-  height: 8vh;
-  width: 8vh;
+  height: 10vh;
+  width: 10vh;
   background-color: var(--dark-violet);
-  text-align: center;
-  display: flex;
   margin-top: -6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .statImg img {
-  padding: 2vh;
+  padding: 5vh;
 }
 
 .line {
@@ -350,4 +459,12 @@ footer {
 .logoFoot,
 .contacts a {
   padding: 0 1vh;
+}
+
+.logoFoot svg path {
+  fill: white;
+}
+
+.contacts svg path:hover {
+  fill: var(--cyan-color);
 }
