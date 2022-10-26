@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Shortly URL shortening API](https://github.com/wonder-filka/URL-shortening-API-landing-page)
-- Live Site URL: [Shortly URL shortening API](https://lucky-pegasus-3ebc98.netlify.app/)
+- Solution URL: [GitHub](https://github.com/wonder-filka/URL-shortening-API-landing-page)
+- Live Site URL: [Netlify](https://lucky-pegasus-3ebc98.netlify.app/)
 
 ## My process
 
@@ -39,8 +39,8 @@ Users should be able to:
 - HTML5
 - CSS
 - Flexbox
-- [ES6] - JS
-- [JQuery] - JS Library
+- ES6 - JS
+- JQuery - JS Library
 
 ## Author
 
