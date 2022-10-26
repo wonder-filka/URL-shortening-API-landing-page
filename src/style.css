@@ -166,8 +166,8 @@ nav,
 }
 
 .btnAterClick {
-  background-color: #9be3e2;
-  border: 1px solid #9be3e2;
+  background-color: var(--dark-violet);
+  border: 1px solid var(--dark-violet);
 }
 
 nav {
