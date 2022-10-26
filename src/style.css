@@ -314,7 +314,6 @@ nav {
 }
 
 label {
-  display: none;
   color: var(--red-color);
   position: absolute;
   padding: 0 2rem;

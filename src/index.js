@@ -1,4 +1,5 @@
 let form = document.querySelector("#searchForm");
+let label = document.querySelector("#labelSearch");
 
 form.addEventListener("submit", handleSubmit);
 
@@ -9,8 +10,13 @@ function handleSubmit(event) {
 }
 
 function getData(link) {
-  let apiUrl = `https://api.shrtco.de/v2/shorten?url=${link}`;
-  axios.get(apiUrl).then(showResult);
+  if (link != 0) {
+    label.innerHTML = ``;
+    let apiUrl = `https://api.shrtco.de/v2/shorten?url=${link}`;
+    axios.get(apiUrl).then(showResult);
+  } else {
+    label.innerHTML = `Please add a link`;
+  }
 }
 
 function showResult(response) {
