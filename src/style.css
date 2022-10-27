@@ -108,7 +108,7 @@ body {
   max-width: 100%;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 main {
@@ -117,7 +117,8 @@ main {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 74px;
+  color: var(--very-dark-blue);
   margin: 0;
   line-height: 1.2;
 }
@@ -130,6 +131,7 @@ h3 {
 
 h5 {
   font-size: 20px;
+  margin: 1vh;
 }
 
 p {
@@ -150,6 +152,7 @@ nav,
 .footWrap {
   width: 70%;
   margin: 0 auto;
+  margin-top: 2vh;
 }
 
 .btn {
@@ -165,6 +168,9 @@ nav,
   cursor: pointer;
 }
 
+.btnNav {
+  padding: 0.5rem 1rem;
+}
 .btnAterClick {
   background-color: var(--dark-violet);
   border: 1px solid var(--dark-violet);
@@ -364,7 +370,7 @@ label {
 }
 
 .statistics p {
-  margin: 3vh 0;
+  margin: 1vh 0;
 }
 
 .statList {
@@ -381,7 +387,7 @@ label {
   height: 100%;
   flex: 1;
   z-index: 1000;
-  margin: 1vh;
+  margin: 2vh;
   display: flex;
   flex-direction: column;
 }
@@ -423,7 +429,7 @@ label {
   text-align: center;
   background-color: var(--dark-violet);
   background-image: url("../images/bg-boost-desktop.svg");
-  padding: 10vh 0;
+  padding: 12vh 0;
   color: white;
   background-size: cover;
 }
@@ -441,7 +447,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 3vh 0;
+  padding: 5vh 0;
 }
 
 .footListItem {
