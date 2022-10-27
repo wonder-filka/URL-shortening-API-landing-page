@@ -176,6 +176,11 @@ nav,
   border: 1px solid var(--dark-violet);
 }
 
+.btnAterClickAll {
+  background-color: #9be3e2;
+  border: #9be3e2;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;

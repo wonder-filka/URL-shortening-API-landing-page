@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".btn").click(function () {
-    $(this).addClass("btnAterClick");
+    $(this).addClass("btnAterClickAll");
   });
 
   $(".menuMobile").click(function () {
