@@ -45,4 +45,4 @@ Users should be able to:
 ## Author
 
 - Website - [Iryna Filonova](https://sensational-cactus-93a152.netlify.app/)
-- Linkedin - [Iryna Filonova] (https://www.linkedin.com/in/iryna-filonova-6487a8237/)
+- Linkedin - [Iryna Filonova](https://www.linkedin.com/in/iryna-filonova-6487a8237/)
